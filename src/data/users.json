@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"name": "Gilmar",
+		"age": 38,
+		"gender": "male",
+		"vip": false,
+		"email": "professorgilmagro@gmail.com",
+		"salary": 2025.4
+	},
+	{
+		"id": 2,
+		"name": "Fernanda",
+		"age": 11,
+		"gender": "female",
+		"vip": true,
+		"email": "fernandinha@gmail.com",
+		"salary": 0
+	},
+	{
+		"id": 3,
+		"name": "Christian",
+		"age": 16,
+		"gender": "male",
+		"vip": true,
+		"email": "chrisfilho19@gmail.com",
+		"salary": 0
+	},
+	{
+		"id": 4,
+		"name": "Mari",
+		"gender": "female",
+		"age": 37,
+		"vip": true,
+		"email": "chrislene82@gmail.com",
+		"salary": 1230.9
+	}
+]

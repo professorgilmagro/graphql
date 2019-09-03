@@ -1,0 +1,9 @@
+type User {
+	id: ID!
+	name: String
+	email: String
+	gender: String
+	age: Int
+	salary: Float
+	vip: Boolean
+}

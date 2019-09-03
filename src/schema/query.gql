@@ -1,0 +1,8 @@
+type Query {
+	hello: String
+	now: Date
+	logged: User
+	featuredProducts: Product
+	userList: [User]
+	getUser(id: ID): User
+}
