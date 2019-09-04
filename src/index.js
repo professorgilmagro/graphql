@@ -2,6 +2,7 @@
 const { ApolloServer, gql } = require('apollo-server');
 const { importSchema } = require('graphql-import');
 const jsonUsers = require('./data/users.json');
+const jsonProfiles = require('./data/user-levels.json');
 
 // A map of functions which return data for the schema.
 const resolvers = {
@@ -15,6 +16,15 @@ const resolvers = {
 		}
 	},
 
+	User: {
+		profile: user => {
+			const results = jsonProfiles.filter(
+				p => p.id === parseInt(user.profile_id)
+			);
+			return results ? results[0] : null;
+		}
+	},
+
 	Query: {
 		hello: () => 'Hello World',
 		now: () => new Date(),
@@ -25,7 +35,8 @@ const resolvers = {
 				age: 38,
 				vip: false,
 				email: 'professorgilmagro@gmail.com',
-				salary: 20.4
+				salary: 20.4,
+				profile_id: 3
 			};
 		},
 		featuredProducts: () => {
@@ -47,7 +58,7 @@ const resolvers = {
 };
 
 const server = new ApolloServer({
-	typeDefs: importSchema('./schema/index.gql'),
+	typeDefs: importSchema(__dirname + '/schema/index.graphql'),
 	resolvers
 });
 

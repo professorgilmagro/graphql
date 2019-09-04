@@ -6,4 +6,11 @@ type User {
 	age: Int
 	salary: Float
 	vip: Boolean
+	profile_id: Int
+	profile: Profile
+}
+
+type Profile {
+	id: ID!
+	name: String
 }

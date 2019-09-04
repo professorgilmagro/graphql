@@ -6,7 +6,8 @@
 		"gender": "male",
 		"vip": false,
 		"email": "professorgilmagro@gmail.com",
-		"salary": 2025.4
+		"salary": 2025.4,
+		"profile_id": 2
 	},
 	{
 		"id": 2,
@@ -15,7 +16,8 @@
 		"gender": "female",
 		"vip": true,
 		"email": "fernandinha@gmail.com",
-		"salary": 0
+		"salary": 0,
+		"profile_id": 1
 	},
 	{
 		"id": 3,
@@ -24,7 +26,8 @@
 		"gender": "male",
 		"vip": true,
 		"email": "chrisfilho19@gmail.com",
-		"salary": 0
+		"salary": 0,
+		"profile_id": 1
 	},
 	{
 		"id": 4,
@@ -33,6 +36,7 @@
 		"age": 37,
 		"vip": true,
 		"email": "chrislene82@gmail.com",
-		"salary": 1230.9
+		"salary": 1230.9,
+		"profile_id": 3
 	}
 ]
