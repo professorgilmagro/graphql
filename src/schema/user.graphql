@@ -1,3 +1,9 @@
+enum Status {
+	active
+	inactive
+	blocked
+}
+
 type User {
 	id: ID!
 	name: String
@@ -6,6 +12,7 @@ type User {
 	age: Int
 	salary: Float
 	vip: Boolean
+	status: Status
 	profile_id: Int
 	profile: Profile
 }
